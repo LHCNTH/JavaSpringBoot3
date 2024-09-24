@@ -96,10 +96,10 @@ public class UserController {
         if (checkUser == null) {
             // Trả về phản hồi với thông báo lỗi
             ApiResponse<String> errorResponse = new ApiResponse<>(
-                    "id không tồn tại", // data
-                    HttpStatus.BAD_REQUEST.value(), // statusCode
-                    "Xử lý thất bại!", // message
-                    false // success
+                    "id không tồn tại",
+                    HttpStatus.BAD_REQUEST.value(),
+                    "Xử lý thất bại!",
+                    false
             );
             return new ResponseEntity<>(errorResponse, HttpStatus.BAD_REQUEST);
         }
@@ -125,10 +125,10 @@ public class UserController {
         if (user == null) {
             // Trả về phản hồi với thông báo lỗi
             ApiResponse<String> errorResponse = new ApiResponse<>(
-                    "id không tồn tại", // data
-                    HttpStatus.BAD_REQUEST.value(), // statusCode
-                    "Xử lý thất bại!", // message
-                    false // success
+                    "id không tồn tại",
+                    HttpStatus.BAD_REQUEST.value(),
+                    "Xử lý thất bại!",
+                    false
             );
             return new ResponseEntity<>(errorResponse, HttpStatus.BAD_REQUEST);
         }
